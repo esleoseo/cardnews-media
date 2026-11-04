@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>카드뉴스 리뷰 demo</title>
+<style>
+  :root { --bg: #f4f4f5; --card: #fff; --fg: #18181b; --muted: #71717a; --line: #e4e4e7; --accent: #2563eb; --warn: #b45309; --warn-bg: #fef3c7; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #09090b; --card: #18181b; --fg: #fafafa; --muted: #a1a1aa; --line: #27272a; --accent: #60a5fa; --warn: #fbbf24; --warn-bg: #422006; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  header { padding: 20px 16px 8px; max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .help { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 12px 0 0; font-size: 14px; }
+  .help code { background: var(--bg); padding: 1px 6px; border-radius: 6px; }
+  main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+  h2 { font-size: 16px; margin: 28px 0 10px; }
+  h2 small { color: var(--muted); font-weight: 400; margin-left: 6px; }
+  .post { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 14px; overflow: hidden; }
+  .head { display: flex; gap: 8px; align-items: center; padding: 12px 14px 8px; flex-wrap: wrap; }
+  .id { font-weight: 700; font-size: 15px; background: var(--fg); color: var(--card); border-radius: 6px; padding: 1px 8px; }
+  .slot { color: var(--muted); font-size: 13px; }
+  .badge { font-size: 12px; border-radius: 999px; padding: 2px 9px; background: var(--bg); color: var(--muted); }
+  .badge.risk { background: var(--warn-bg); color: var(--warn); }
+  .badge.status { background: var(--accent); color: #fff; }
+  .title { padding: 0 14px 8px; font-weight: 600; font-size: 16px; }
+  .slides { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 14px 12px; }
+  .slides img { width: 72%; max-width: 300px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; scroll-snap-align: start; flex: none; background: #000; }
+  details { border-top: 1px solid var(--line); padding: 10px 14px; }
+  summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+  pre { white-space: pre-wrap; font: inherit; margin: 8px 0 0; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .meta a { color: var(--accent); word-break: break-all; }
+  .missing { padding: 0 14px 12px; color: var(--warn); font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>카드뉴스 리뷰 · demo</h1>
+  <div class="meta">2026. 10. 21. 오전 4:49:31 기준</div>
+  <div class="help">
+    채팅에 답장하면 반영돼요.<br>
+    전체 승인 <code>ok</code> · 일부 빼고 승인 <code>ok -A2 -C3</code><br>
+    수정 요청 <code>A2 수정: 표지 제목 더 짧게</code> · 오늘 중지 <code>보류</code>
+  </div>
+</header>
+<main>
+  <h2>깡쥐매거진 kge mag<small>펫</small></h2>
+  <section class="post" id="A1">
+    <div class="head">
+      <span class="id">A1</span><span class="slot">12:00 업로드</span>
+      
+      
+    </div>
+    <div class="title">요즘 댕댕이는 호캉스 VIP.</div>
+    
+    <div class="slides"><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;A1&#x2F;01-a24e9d3e.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;A1&#x2F;02-44336da9.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;A1&#x2F;03-b2a3a7a2.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;A1&#x2F;04-296aabd4.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;A1&#x2F;05-9c9f06d2.jpg" loading="lazy" alt=""></div>
+    <details>
+      <summary>캡션 · 출처 · 선정 이유</summary>
+      <pre>반려견과 여행 가는 보호자가 늘면서 호텔과 여행 플랫폼이 펫 전용 객실, 할인 쿠폰, 간식 혜택을 늘리고 있어요. 혜택마다 기간이 정해져 있으니 일정 잡기 전에 꼭 확인하세요. 우리 아이와 가고 싶은 곳, 댓글로 알려주세요!
+
+출처: 연합뉴스
+
+📷 by Roberto Nickson, Frank Ng, Rachel Coyne, Joana Abreu
+
+#반려견여행 #애견동반호텔 #댕댕이 #강아지호캉스 #반려동물동반숙소 #깡쥐매거진
+</pre>
+      <div class="meta">선정 이유: 연합뉴스 보도, 반려견 동반 여행 수요에 맞춘 호텔·플랫폼 혜택을 한 번에 정리 가능</div>
+      <div class="meta"><a href="https:&#x2F;&#x2F;www.yna.co.kr&#x2F;view&#x2F;AKR20261020109800030" target="_blank" rel="noopener">연합뉴스</a> </div>
+    </details>
+  </section>
+  <h2>라이파 매거진 LiFa Mag<small>패션</small></h2>
+  <section class="post" id="B1">
+    <div class="head">
+      <span class="id">B1</span><span class="slot">12:00 업로드</span>
+      
+      
+    </div>
+    <div class="title">창원 홀린 무신사 나흘 만에 4.5억.</div>
+    
+    <div class="slides"><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;B1&#x2F;01-1c00ce14.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;B1&#x2F;02-a3d29361.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;B1&#x2F;03-1f6d6944.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;B1&#x2F;04-d38ff41b.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;B1&#x2F;05-94e94b42.jpg" loading="lazy" alt=""></div>
+    <details>
+      <summary>캡션 · 출처 · 선정 이유</summary>
+      <pre>무신사 스탠다드가 경남 첫 매장인 창원점에서 나흘 만에 매출 4억5000만원을 넘겼다. 영남권 매장 매출도 1년 새 30% 늘며 지방 오프라인 매장이 힘을 받고 있다. 우리 동네에 생겼으면 하는 매장은?
+
+출처: 현대경제신문, 한국경제
+
+📷 by Sabhyata Sahu
+
+#무신사 #무신사스탠다드 #창원 #패션뉴스 #오프라인매장 #라이파매거진
+</pre>
+      <div class="meta">선정 이유: 6개 매체 보도, 지방 오프라인 확장이라는 패션 유통 흐름을 보여줌</div>
+      <div class="meta"><a href="http:&#x2F;&#x2F;www.finomy.com&#x2F;news&#x2F;articleView.html?idxno&#x3D;264151" target="_blank" rel="noopener">현대경제신문</a> <a href="https:&#x2F;&#x2F;www.hankyung.com&#x2F;article&#x2F;202610203008i" target="_blank" rel="noopener">한국경제</a> </div>
+    </details>
+  </section>
+  <h2>BBaTech 빠텤 매거진<small>테크</small></h2>
+  <section class="post" id="C1">
+    <div class="head">
+      <span class="id">C1</span><span class="slot">12:00 업로드</span>
+      
+      
+    </div>
+    <div class="title">러닝할 때 이어폰 이제 귀에 건다.</div>
+    
+    <div class="slides"><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;C1&#x2F;01-5d8517fc.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;C1&#x2F;02-69063b65.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;C1&#x2F;03-18d680cd.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;C1&#x2F;04-469b4f03.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;C1&#x2F;05-bda2e7b8.jpg" loading="lazy" alt=""></div>
+    <details>
+      <summary>캡션 · 출처 · 선정 이유</summary>
+      <pre>삼성전자의 첫 클립형 무선 이어폰 갤럭시 버즈 온이 27일 나와요. 귀를 막지 않아 러닝하면서도 주변 소리를 들을 수 있는 게 핵심이에요. 오픈형 이어폰, 써볼 생각 있나요?
+
+출처: 주간한국
+
+📷 by BaljkanN4 📸, Sahaj Patel, Behnam Norouzi, Paul
+
+#갤럭시버즈온 #삼성전자 #오픈형이어폰 #러닝이어폰 #테크뉴스 #빠텤매거진
+</pre>
+      <div class="meta">선정 이유: 16개 매체 보도, 일반인이 체감하는 신제품</div>
+      <div class="meta"><a href="https:&#x2F;&#x2F;weekly.hankooki.com&#x2F;news&#x2F;articleViewAmp.html?idxno&#x3D;7189887" target="_blank" rel="noopener">주간한국</a> </div>
+    </details>
+  </section>
+  <h2>에데 매거진 EvDay Magazine<small>한국 일상</small></h2>
+  <section class="post" id="D1">
+    <div class="head">
+      <span class="id">D1</span><span class="slot">12:00 업로드</span>
+      
+      
+    </div>
+    <div class="title">편의점 빵 사러 30대 남자가 온다.</div>
+    
+    <div class="slides"><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;D1&#x2F;01-c1b68c22.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;D1&#x2F;02-20f23a5f.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;D1&#x2F;03-3248bdd0.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;D1&#x2F;04-768a9b63.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;D1&#x2F;05-d4904bd9.jpg" loading="lazy" alt=""></div>
+    <details>
+      <summary>캡션 · 출처 · 선정 이유</summary>
+      <pre>CU와 리센느가 함께 만든 빵이 한 달 만에 200만 개 팔렸어요. 구매자 셋 중 둘은 남성, 그중 30대 남성이 가장 많았다고 해요. 여러분은 어떤 맛 드셔봤나요?
+
+출처: 한국경제
+
+📷 by wyyz, Chase Yi, Onnuri Yi, Zhen Yao
+
+#편의점빵 #CU #리센느 #편의점신상 #옥수수크림빵 #에데매거진
+</pre>
+      <div class="meta">선정 이유: 한경 등 보도, 편의점 화제 상품 + 의외의 구매층(30대 남성)</div>
+      <div class="meta"><a href="https:&#x2F;&#x2F;www.hankyung.com&#x2F;article&#x2F;202610203023i" target="_blank" rel="noopener">한국경제</a> </div>
+    </details>
+  </section>
+  <h2>폭죽 매거진 PJ Mag<small>행사·축제·이벤트</small></h2>
+  <section class="post" id="E1">
+    <div class="head">
+      <span class="id">E1</span><span class="slot">12:00 업로드</span>
+      
+      
+    </div>
+    <div class="title">이번 주말 울주 백룡 찾으러 가자.</div>
+    
+    <div class="slides"><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;E1&#x2F;01-fb55eb14.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;E1&#x2F;02-7313e739.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;E1&#x2F;03-ebfe1723.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;E1&#x2F;04-551b5c1f.jpg" loading="lazy" alt=""><img src="https:&#x2F;&#x2F;esleoseo.github.io&#x2F;cardnews-media&#x2F;demo-J-0XA0v0x7gx&#x2F;E1&#x2F;05-5c318e27.jpg" loading="lazy" alt=""></div>
+    <details>
+      <summary>캡션 · 출처 · 선정 이유</summary>
+      <pre>23~24일 울주 선바위공원에서 백룡 탐험대 축제가 열려요. 첫날 밤엔 콘서트, 둘째 날엔 보물찾기 체험, 밤마다 선바위 미디어아트까지 볼 수 있어요. 같이 갈 사람 태그해 주세요!
+
+출처: 연합뉴스
+
+📷 by Vivu Vietnam, . abdelkader1001, ARTO SURAJ, Nikhil Behl
+
+#울주축제 #선바위축제 #울산가볼만한곳 #주말축제 #10월축제 #폭죽매거진
+</pre>
+      <div class="meta">선정 이유: 이번 주말 개최, 체험형 보물찾기 축제로 가족·커플 관심</div>
+      <div class="meta"><a href="https:&#x2F;&#x2F;www.yna.co.kr&#x2F;view&#x2F;AKR20261020129300057" target="_blank" rel="noopener">연합뉴스</a> </div>
+    </details>
+  </section>
+</main>
+</body>
+</html>
